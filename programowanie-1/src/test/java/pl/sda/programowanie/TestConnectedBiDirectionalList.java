@@ -87,6 +87,8 @@ public class TestConnectedBiDirectionalList {
         assertEquals(1, listatestowa.size());
 
         listatestowa.get(0);
+        listatestowa.add("next test");
+        assertEquals("next test",listatestowa.get(1));
 
         try {
             listatestowa.get(1);
